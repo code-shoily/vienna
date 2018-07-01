@@ -20,7 +20,7 @@ In your hugo site directory, run:
 ```shell
 $ mkdir themes
 $ cd themes
-$ git clone https://github.com/keichi/vienna
+$ git clone https://github.com/code-shoily/vienna
 ```
 
 Vienna is also included in the `spf13/hugoThemes` repository.
