@@ -41,7 +41,11 @@
   {{ end }}
 </head>
 <body>
+    {{ if isset .Site.Params "bgcolor" }}
+    <header class="global-header"  style="background:{{.Site.Params.bgcolor}}">
+    {{ else }}
     <header class="global-header"  style="background-image:url({{ if isset .Site.Params "image" }}{{ .Site.Params.image }} {{ else }} /images/bg.jpg {{ end }})">
+    {{ end }}
     <section class="header-text">
       <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
       {{ with .Site.Params.subtitle }}
