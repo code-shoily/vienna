@@ -145,15 +145,16 @@ a.btn-back {
 
 .post-tag a {
     padding: 0 10px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid #34495e;
     border-radius: 12px;
-    color: rgba(0, 0, 0, 0.3);
+    color: #34495e;
     text-decoration: none;
     transition: color,border-color,background-color 0.1s linear;
+    text-transform: uppercase;
 }
 
 .post-tag a:hover {
-    background-color: rgba(0, 0, 0, 1.0);
+    background-color: #2c3e50;
     color: rgba(255, 255, 255, 1.0);
 }
 
@@ -261,6 +262,7 @@ a.btn-back {
 
 pre {
     font-size: 14px;
+    padding: 0;
 }
 
 pre code {
@@ -287,3 +289,19 @@ article section img {
     margin: 13px auto;
 }
 
+code {
+    background:#f8f8f8;
+    color:#000000;
+}
+
+.text-primary {
+    color: #34495e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #34495e;
+}
+
+a {
+    color: #34495e;
+}
