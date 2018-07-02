@@ -1,6 +1,14 @@
+body {
+    font-family: "Abel", sans-serif;
+    font-size: 1.8rem;
+}
 main {
     max-width: 750px;
     word-wrap: break-word;
+}
+
+code {
+    font-family: "Fira Code";
 }
 
 /* Header */
@@ -264,7 +272,7 @@ a.btn-back {
 
 pre {
     font-size: 14px;
-    padding: 0;
+
 }
 
 pre code {
@@ -287,7 +295,7 @@ blockquote {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: "Source Sans Pro", "Kozuka Gothic Pr6N", Meiryo, sans-serif !important;
+    font-family: "Abel", sans-serif !important;
 }
 
 article section img {
@@ -311,4 +319,15 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     color: #34495e;
+}
+
+.about-link, .about-link:visited {
+    font-weight: 400;
+    color: #ecf0f1;
+}
+
+.about-link:hover {
+    font-weight: 400;
+    color: #bdc3c7 !important;
+    text-decoration: underline;
 }
