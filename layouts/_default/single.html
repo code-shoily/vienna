@@ -62,7 +62,7 @@
     {{ end }}
     {{ end }}
 
-    {{ if (ne .Params.NonPostPage true)}}
+    {{ if eq .Section "posts"}}
     <ul class="pager">
       {{ if .Next }}
       <li class="previous"><a href="{{ .Next.Permalink }}"><span aria-hidden="true">&larr;</span> Older</a></li>
