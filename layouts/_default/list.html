@@ -3,7 +3,7 @@
   <h1>{{ .Title }}!!!</h1>
   {{ range .Data.Pages }}
   <hr/>
-  {{ .Render "li" }}
+    {{ .Render "li" }}
   {{ end }}
 </section>
 {{ partial "footer.html" . }}

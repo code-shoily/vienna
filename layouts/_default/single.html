@@ -62,6 +62,7 @@
     {{ end }}
     {{ end }}
 
+    {{ if (ne .Params.NonPostPage true)}}
     <ul class="pager">
       {{ if .Next }}
       <li class="previous"><a href="{{ .Next.Permalink }}"><span aria-hidden="true">&larr;</span> Older</a></li>
@@ -74,6 +75,7 @@
       <li class="next disabled"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
       {{ end }}
     </ul>
+    {{ end }}
   </footer>
 </article>
 
