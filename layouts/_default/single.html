@@ -14,9 +14,15 @@
       </div>
     {{ end }}
       <div class="pull-right">
-        {{ range .Params.tags }}
-        <span class="post-tag small"><a href="{{ $baseurl }}/tags/{{ . | urlize }}">{{ . }}</a></span>
-        {{ end }}
+        {{if eq .Site.Language.Lang "bn" }}
+          {{ range .Params.tags }}
+          <span class="post-tag small"><a href="{{ $baseurl }}bn/tags/{{ . | urlize }}">{{ . }}</a></span>
+          {{ end }}
+        {{ else }}
+          {{ range .Params.tags }}
+          <span class="post-tag small"><a href="{{ $baseurl }}tags/{{ . | urlize }}">{{ . }}</a></span>
+          {{ end }}
+        {{ end }}        
       </div>
     </div>
   </header>
@@ -35,7 +41,7 @@
       {{ end }}
         <div class="text-center" style="padding-top: 10px">
           {{ range .Params.tags }}
-          <span class="post-tag small"><a href="{{ $baseurl }}/tags/{{ . | urlize }}">{{ . }}</a></span>
+          <span class="post-tag small"><a href="{{ $baseurl }}tags/{{ . | urlize }}">{{ . }}</a></span>
           {{ end }}
         </div>
       </div>
@@ -79,4 +85,5 @@
   </footer>
 </article>
 
+{{ partial "disqus.html" . }}
 {{ partial "footer.html" . }}
