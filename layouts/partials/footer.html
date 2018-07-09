@@ -35,6 +35,8 @@
   {{ end }}
 
   <script src="//www.powr.io/powr.js?external-type=html"></script> 
- <div class="powr-hit-counter" id="9fb2ce72_1531159982"></div>
+  {{ with .Site.Params.powr_id}}
+  <div class="powr-hit-counter" id="{{ . }}"></div>
+  {{ end }}
 </body>
 </html>
